@@ -1,0 +1,15 @@
+title: Buege
+description: Buege 的個人部落格
+url: https://buege.net
+lang: zh-TW
+timezone: Asia/Taipei
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+permalink: /:year/:month/:day/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
