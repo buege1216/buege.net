@@ -20,3 +20,4 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .back-link{margin-top:40px}
 .site-footer{max-width:720px;margin:0 auto;padding:24px 16px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
 .article-body p{white-space:pre-line}
+.article-body br{display:none}
