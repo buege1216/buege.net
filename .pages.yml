@@ -19,20 +19,14 @@ content:
         label: 標題
         type: string
         required: true
-      - name: updated
-        label: 最後編輯時間
-        type: date
-        readonly: true
-        options:
-          time: true
-          format: "yyyy-MM-dd HH:mm:ss xxx"
       - name: date
         label: 發布時間
-        type: date
-        required: true
-        options:
-          time: true
-          format: "yyyy-MM-dd HH:mm:ss xxx"
+        type: string
+        readonly: true
+      - name: updated
+        label: 最後編輯時間
+        type: string
+        readonly: true
       - name: url_name
         label: 網址名稱
         type: string
