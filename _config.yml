@@ -14,5 +14,3 @@ defaults:
     values:
       layout: post
 future: true
-kramdown:
-  hard_wrap: true
