@@ -1,0 +1,36 @@
+# Pages CMS 後台設定（app.pagescms.org，用 GitHub 登入）
+media:
+  input: assets/img
+  output: /assets/img
+
+content:
+  - name: posts
+    label: 文章
+    type: collection
+    path: _posts
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{url_name}.md"
+    view:
+      primary: title
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: 標題
+        type: string
+        required: true
+      - name: url_name
+        label: 網址名稱（用英文或拼音，例如 first-trip）
+        type: string
+        required: true
+      - name: author
+        label: 作者
+        type: select
+        required: true
+        options:
+          values:
+            - Buege
+            - 言熙
+      - name: body
+        label: 內文
+        type: rich-text
