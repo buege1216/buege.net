@@ -21,5 +21,7 @@
     {{ content }}
   </main>
   <footer class="site-footer">© {{ 'now' | date: '%Y' }} {{ site.title }} · buege.net</footer>
+  <!-- Cloudflare Web Analytics（只在 Cloudflare 後台看，不顯示在網站上）-->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "e2063c301ba44d81b206c9dd3238e317"}'></script>
 </body>
 </html>
