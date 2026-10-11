@@ -5,7 +5,7 @@ layout: default
   {% for post in site.posts %}
   <li>
     <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <div class="meta">{{ post.date | date: "%Y-%m-%d" }}</div>
+    <div class="meta">{{ post.date | date: "%Y-%m-%d" }}{% if post.author %} · {{ post.author }}{% endif %}</div>
     {% if post.excerpt %}<p class="excerpt">{{ post.excerpt | strip_html | truncate: 90 }}</p>{% endif %}
   </li>
   {% else %}
