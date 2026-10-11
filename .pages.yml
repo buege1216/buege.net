@@ -19,6 +19,13 @@ content:
         label: 標題
         type: string
         required: true
+      - name: date
+        label: 發布時間
+        type: date
+        required: true
+        options:
+          time: true
+          format: "yyyy-MM-dd HH:mm:ss xxx"
       - name: url_name
         label: 網址名稱（用英文或拼音，例如 first-trip）
         type: string
