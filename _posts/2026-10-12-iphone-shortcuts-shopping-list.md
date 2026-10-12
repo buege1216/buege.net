@@ -1,5 +1,6 @@
 ---
 title: iPhone 捷徑｜抵達量販店時，提醒你要買什麼東西
+date: "2026-10-12 21:33"
 url_name: iphone-shortcuts-shopping-list
 author: Buege
 ---
