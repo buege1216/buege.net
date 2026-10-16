@@ -6,6 +6,7 @@ timezone: Asia/Taipei
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 permalink: /:year/:month/:day/:title/
 defaults:
   - scope:
