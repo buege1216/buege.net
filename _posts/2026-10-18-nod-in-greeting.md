@@ -1,5 +1,6 @@
 ---
 title: 點頭打招呼
+date: "2026-10-18 12:05"
 url_name: nod-in-greeting
 author: Buege
 ---
