@@ -8,7 +8,7 @@
   <link rel="icon" href="{{ '/assets/icons/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="icon" href="{{ '/assets/icons/favicon-32.png' | relative_url }}" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
-  <meta name="color-scheme" content="light">
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap">
@@ -24,12 +24,30 @@
       <a href="{{ '/about/'| relative_url }}">關於</a>
       <a href="{{ '/now/' | relative_url }}">近況</a>
       <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      <button type="button" class="theme-toggle" id="theme-toggle"></button>
     </nav>
   </header>
   <main class="wrap">
     {{ content }}
   </main>
   <footer class="site-footer">版權所有 © 2026 Buege</footer>
+  <script>
+    (function () {
+      var root = document.documentElement, btn = document.getElementById('theme-toggle');
+      function label() {
+        var dark = root.dataset.theme === 'dark';
+        btn.textContent = dark ? '☀ 淺色' : '☾ 深色';
+        btn.setAttribute('aria-label', dark ? '切換成淺色模式' : '切換成深色模式');
+      }
+      btn.addEventListener('click', function () {
+        var dark = root.dataset.theme !== 'dark';
+        if (dark) root.dataset.theme = 'dark'; else delete root.dataset.theme;
+        try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+        label();
+      });
+      label();
+    })();
+  </script>
   <!-- Cloudflare Web Analytics（只在 Cloudflare 後台看，不顯示在網站上）-->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a9b4b85cfb3942b18879fc0176eb3ce4"}'></script>
 </body>

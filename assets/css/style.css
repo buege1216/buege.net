@@ -1,4 +1,5 @@
 :root{color-scheme:light;--bg:#fffdf9;--fg:#2b2622;--muted:#8a7f72;--line:#e2d9c8;--accent:#9a4a2b;--code:#f3eee4}
+html[data-theme="dark"]{color-scheme:dark;--bg:#1c1a17;--fg:#e9e2d6;--muted:#a39886;--line:#38322a;--accent:#d98a64;--code:#2a261f}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.95 "Noto Serif TC","Songti TC",Georgia,serif;letter-spacing:.02em}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}
@@ -27,3 +28,6 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;tex
 .archive-list li{padding:4px 0}
 .archive-list li .meta:first-child{font-variant-numeric:tabular-nums;margin-right:8px}
 @media (max-width:480px){.site-header{flex-wrap:wrap;gap:6px}.site-header nav a{margin-left:0;margin-right:14px}}
+.theme-toggle{margin-left:18px;background:none;border:1px solid var(--line);border-radius:999px;color:var(--muted);font:inherit;font-size:.85rem;line-height:1;padding:6px 10px;cursor:pointer}
+.theme-toggle:hover{color:var(--accent);border-color:var(--accent)}
+@media (max-width:480px){.theme-toggle{margin-left:0}}
