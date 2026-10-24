@@ -19,8 +19,10 @@
   <header class="site-header">
     <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
     <nav>
+      {% if site.posts.size > 0 %}
       <a href="{{ '/' | relative_url }}">文章</a>
       <a href="{{ '/archive/' | relative_url }}">總表</a>
+      {% endif %}
       <a href="{{ '/about/'| relative_url }}">關於</a>
       <a href="https://buege.buege.net/">Buege</a>
       <a href="https://yanxi.buege.net/">言熙</a>
