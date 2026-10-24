@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+<p class="excerpt">這裡是 Buege 與言熙的聯名入口。兩個人各有自己的空間，一起寫的文章放在下面。</p>
+<ul class="post-list">
+  <li><a class="post-title" href="https://buege.buege.net/">Buege 的部落格 →</a></li>
+  <li><a class="post-title" href="https://yanxi.buege.net/">言熙的部落格 →</a></li>
+</ul>
+<h2 class="archive-year">聯名文章</h2>
 <ul class="post-list">
   {% for post in site.posts %}
   <li>
@@ -9,6 +15,6 @@ layout: default
     {% if post.excerpt %}<p class="excerpt">{{ post.excerpt | strip_html | truncate: 90 }}</p>{% endif %}
   </li>
   {% else %}
-  <li class="meta">還沒有文章。</li>
+  <li class="meta">還沒有聯名文章。</li>
   {% endfor %}
 </ul>
