@@ -37,29 +37,12 @@ content:
         required: true
         options:
           values:
-            - Buege
-            - 言熙
+            - Buege & 言熙
       - name: body
         label: 內文
         type: rich-text
         options:
           format: html
-
-  - name: now
-    label: 近況頁
-    type: file
-    path: now.md
-    format: yaml-frontmatter
-    fields:
-      - name: title
-        label: 標題
-        type: string
-        required: true
-      - name: body
-        label: 內文（記得改「最後更新」日期）
-        type: rich-text
-        options:
-          format: markdown
 
   - name: about
     label: 關於頁

@@ -1,11 +1,12 @@
-title: Buege
-description: Buege 的個人部落格
+title: Buege & 言熙
+description: Buege & 言熙的聯名入口
 url: https://blog.buege.net
 lang: zh-TW
 timezone: Asia/Taipei
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-redirect-from
   - jekyll-sitemap
 permalink: /:year/:month/:day/:title/
 defaults:
